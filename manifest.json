@@ -16,8 +16,7 @@
   "permissions": [
     "activeTab",
     "scripting",
-    "tabs",
-    "storage"
+    "tabs"
   ],
   "host_permissions": [
     "https://aca.nuk.edu.tw/*"
