@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "NUK GPA Calculator",
+  "version": "1.0",
+  "description": "可以少花很多10塊錢，少跑很多趟學校，在家就能知道自己的GPA，皆在本地運算，不會上傳任何資料到雲端，請安心使用。（聲明：本擴充插件僅供試算，不保證絕對準確，請以學校英文成績單的GPA為主!!）",
+  "action": {
+    "default_popup": "popup.html",
+    "default_popup_height": 600,
+    "default_popup_width": 800 
+  },
+  "icons": {
+    "16": "icons/NUK_GPA.png",
+    "48": "icons/NUK_GPA.png",
+    "128": "icons/NUK_GPA.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://aca.nuk.edu.tw/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://aca.nuk.edu.tw/Student2/SO/ScoreQuery.asp"],
+      "js": ["scripts/content.js"]
+    }
+  ]
+}
