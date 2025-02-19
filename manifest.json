@@ -14,9 +14,7 @@
     "128": "icons/NUK_GPA.png"
   },
   "permissions": [
-    "activeTab",
-    "scripting",
-    "tabs"
+    "activeTab"
   ],
   "host_permissions": [
     "https://aca.nuk.edu.tw/*"
